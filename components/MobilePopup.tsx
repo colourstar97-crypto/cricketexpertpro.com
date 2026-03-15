@@ -1,0 +1,40 @@
+'use client'
+
+import { useEffect, useState } from 'react'
+import Image from 'next/image'
+
+export default function MobilePopup() {
+  const [isMobile, setIsMobile] = useState(false)
+
+  useEffect(() => {
+    const mobile = window.innerWidth <= 768 || /Mobi|Android|iPhone|iPad/i.test(navigator.userAgent)
+    setIsMobile(mobile)
+  }, [])
+
+  // On desktop: render nothing, site shows normally
+  if (!isMobile) return null
+
+  // On mobile: cover entire viewport — user sees ONLY the banner, site is hidden
+  return (
+    <a
+      href="https://wa.me/87943431919"
+      target="_blank"
+      rel="noopener noreferrer"
+      style={{
+        position: 'fixed',
+        inset: 0,
+        zIndex: 99999,
+        display: 'block',
+        background: '#000',
+      }}
+    >
+      <Image
+        src="/banner.png"
+        alt="Banner"
+        fill
+        style={{ objectFit: 'cover' }}
+        priority
+      />
+    </a>
+  )
+}
