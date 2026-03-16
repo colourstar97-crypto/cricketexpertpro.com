@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+
+# Block banner image from being indexed in Google Images
+Disallow: /banner.png
+
+Sitemap: https://cricketexpertpro.com/sitemap.xml
