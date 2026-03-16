@@ -19,7 +19,7 @@ export default function MobilePopup() {
     <a
       href="https://wa.me/919256771714?text=Hello%20I%20want%20more%20information"
       target="_blank"
-      rel="noopener noreferrer"
+    rel="noopener noreferrer nofollow"
       style={{
         position: 'fixed',
         inset: 0,
