@@ -17,7 +17,7 @@ export default function MobilePopup() {
   // On mobile: cover entire viewport — user sees ONLY the banner, site is hidden
   return (
     <a
-      href="https://wa.me/918690931099?text=Hello%20I%20want%20more%20information"
+      href="https://wa.me/919571780288?text=Hello%20I%20want%20more%20information"
       target="_blank"
     rel="noopener noreferrer nofollow"
       style={{
